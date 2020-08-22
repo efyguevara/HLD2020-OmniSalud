@@ -64,7 +64,7 @@ const Cards = () => {
             </p>
             <p>
               <span>
-                <b>Doctor: </b> Dr. Simi
+                <b>Doctor: </b>Leonardo Padrón
               </span>
             </p>
           </CardContent>
@@ -116,7 +116,7 @@ const Cards = () => {
             </p>
             <p>
               <span>
-                <b>Doctor: </b> Dr. Simi
+                <b>Doctor: </b>Leonardo Padrón
               </span>
             </p>
           </CardContent>

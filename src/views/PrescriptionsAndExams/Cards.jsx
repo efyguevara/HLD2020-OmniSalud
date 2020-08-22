@@ -2,7 +2,6 @@ import React from "react";
 import { Grid, Card, CardContent, CardMedia } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
-import InsertDriveFileSharpIcon from "@material-ui/icons/InsertDriveFileSharp";
 import ShareSharpIcon from "@material-ui/icons/ShareSharp";
 import GetAppSharpIcon from "@material-ui/icons/GetAppSharp";
 import NoteAddIcon from '@material-ui/icons/NoteAdd';
@@ -52,7 +51,7 @@ const Cards = () => {
               </p>
               <p>
                 <span>
-                  <b>Doctor: </b>Dr. Mojado
+                  <b>Doctor: </b>Dr. Leonardo Padrón
                 </span>
               </p>
               <p>
@@ -100,7 +99,7 @@ const Cards = () => {
      
               <p>
                 <span>
-                  <b>Doctor: </b>Dr. Mojado
+                  <b>Doctor: </b>Dr. Leonardo Padrón
                 </span>
               </p>
               <p>
