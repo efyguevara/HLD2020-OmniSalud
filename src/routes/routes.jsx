@@ -34,8 +34,8 @@ const Routes = () => {
                             <Route exact path="/" component={Login} />
                             <Route exact path="/inicio" component={Dashboard} />
                             
-                            <Route exact path="/ficha-clinica" component={MedicalRecord} />
-                            <Route exact path="/historial-medico" component={ClinicalFile} />
+                            <Route exact path="/historial-medico" component={MedicalRecord} />
+                            <Route exact path="/ficha-clinica" component={ClinicalFile} />
                             <Route exact path="/controles-y-citas-medicas" component={MedicalChecks} />
                             <Route exact path="/recetas-y-examenes" component={Prescriptions} />
                             <Route exact path="/información-de-interes" component={Information} />
