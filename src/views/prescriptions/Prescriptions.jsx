@@ -29,8 +29,13 @@ const Prescriptions = () => {
   return (
     <>
       <Container maxWidth="md">
- 
-        <b className={classes.textStyles}>RECETAS Y EXÁMENES</b>
+        <Grid
+          container
+          direction="column"
+          alignItems="left"
+        >
+          <b className={classes.textStyles}>RECETAS Y EXÁMENES</b>
+        </Grid>
         <Grid container spacing={4} className={classes.cardContainer}>
             <Cards />
         </Grid>

@@ -10,7 +10,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Cards from './Cards';
 
 const useStyles = makeStyles((theme) => ({
-
   cardContainer: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
@@ -28,8 +27,13 @@ const MedicalChecks = () => {
   return (
     <>
       <Container maxWidth="md">
- 
-        <b className={classes.textStyles}>CONTROLES Y CITAS MÉDICAS</b>
+        <Grid
+          container
+          direction="column"
+          alignItems="left"
+        >
+          <b className={classes.textStyles}>CONTROLES Y CITAS MÉDICAS</b>
+        </Grid>
         <Grid container spacing={4} className={classes.cardContainer}>
             <Cards /> 
         </Grid>

@@ -1,9 +1,17 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
+
 
 const ClinicalFile = () => {
     return (
         <>
-            <h1>Ficha Clínica</h1>
+        <Grid
+          container
+          direction="row"
+          alignItems="left"
+        >
+          <b>FICHA CLÍNICA</b>
+        </Grid>
         </>
     )
 }

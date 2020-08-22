@@ -34,8 +34,8 @@ const Header = () => {
                         direction="row"
                         justify="flex-start"
                         alignItems="center"
-                        >
-                            <Typography variant="h5" className={classes.fontGrey}>
+                    >
+                        <Typography variant="h5" className={classes.fontGrey}>
                             Onmi<span className={classes.fontNav}>Salud</span>
                         </Typography>
                     </Grid>
