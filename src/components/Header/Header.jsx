@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Grid, Paper } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Grid, Link } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import MenuListComposition from './MenuListComposition';
 
@@ -23,33 +23,32 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
     const classes = useStyles();
 
-
-
     return (
         <>
             <AppBar position="static" className={classes.header}>
                 <Toolbar variant="dense">
-                    <Grid 
+                    <Grid
                         container
-                        item xs={9} 
+                        item xs={9}
                         direction="row"
                         justify="flex-start"
                         alignItems="center"
                     >
-                        <Typography variant="h5" className={classes.fontGrey}>
-                            Onmi<span className={classes.fontNav}>Salud</span>
-                        </Typography>
+                        <Link href="/inicio">
+                            <Typography variant="h5" className={classes.fontGrey}>
+                                Onmi<span className={classes.fontNav}>Salud</span>
+                            </Typography>
+                        </Link>
                     </Grid>
 
-                    <Grid 
-                    item xs={3}
-                    container 
-                    direction="row"
-                    justify="flex-end"
-                    alignItems="center">
-                       <MenuListComposition />
+                    <Grid
+                        item xs={3}
+                        container
+                        direction="row"
+                        justify="flex-end"
+                        alignItems="center">
+                        <MenuListComposition />
                     </Grid>
-                    
                 </Toolbar>
             </AppBar>
         </>

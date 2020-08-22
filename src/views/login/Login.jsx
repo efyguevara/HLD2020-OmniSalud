@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import { Grid, CssBaseline, TextField, Container } from '@material-ui/core';
+import { Grid, CssBaseline, TextField, Container, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -67,13 +67,17 @@ const Login = () => {
                         </Grid>
 
                     </Grid>
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        className={classes.submit}
-                    >
-                        Ingresar
-                     </Button>
+
+                    <Link href="/inicio">
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            className={classes.submit}
+                        >
+                            Ingresar
+                        </Button>
+                    </Link>
+
                     <Grid container>
                         <Grid item xs>
                             <label>Regístrate</label>
