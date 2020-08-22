@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Grid } from '@material-ui/core';
 import Layout from '../components/Layout/Layout';
 import Dashboard from '../views/Dashboard/Dashboard';
@@ -16,7 +16,7 @@ const Routes = () => {
 
     return (
         <>
-            <HashRouter basename="/">
+            <BrowserRouter>
                 <Layout>
                     <Grid
                         container
@@ -33,17 +33,17 @@ const Routes = () => {
                         <Switch>
                             <Route exact path="/" component={Login} />
                             <Route exact path="/inicio" component={Dashboard} />
-                            <Route exact path="/historial-medico" component={ClinicalFile} />
+                            
                             <Route exact path="/ficha-clinica" component={MedicalRecord} />
-                            <Route exact path="/recetas-medicas" component={Prescriptions} />
-                            {/* <Route path="/medicamentos-prescritos" component={Medicines} /> */}
-                            <Route exact path="/chequeos-y-citas-medicas" component={MedicalChecks} />
-                            <Route exact path="/información-adicional" component={Information} />
+                            <Route exact path="/historial-medico" component={ClinicalFile} />
+                            <Route exact path="/controles-y-citas-medicas" component={MedicalChecks} />
+                            <Route exact path="/recetas-y-examenes" component={Prescriptions} />
+                            <Route exact path="/información-de-interes" component={Information} />
                             <Route component={NotFound} />
                         </Switch>
                     </Container>
                 </Layout>
-            </HashRouter>
+            </BrowserRouter>
         </>
     );
 }
