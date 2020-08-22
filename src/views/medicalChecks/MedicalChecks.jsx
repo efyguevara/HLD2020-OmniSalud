@@ -17,14 +17,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
   },
-  card: {
-    height: "100%",
-    display: "flex",
-    border: "1px solid #FFFFFF",
-    boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.25)",
-    borderRadius: "6px",
-    minWidth: 275,
-  },
+
   textStyles: {
     textAlign: "initial",
   },
