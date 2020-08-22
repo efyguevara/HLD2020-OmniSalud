@@ -1,52 +1,44 @@
 import React from "react";
 import {
-  Typography,
   Container,
   Grid,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
+
+
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
+import Cards from './Cards';
+
 const useStyles = makeStyles((theme) => ({
-  container: {
-    background: "green",
-    
+
+  cardContainer: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+    display: "flex",
+    flexDirection: "column",
   },
-  cardContainer:{
-    paddingTop: theme.spacing(6),
-    paddingBottom: theme.spacing(6),
-      display:'flex',
-      flexDirection:'column'
-  }
+  card: {
+    height: "100%",
+    display: "flex",
+    border: "1px solid #FFFFFF",
+    boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.25)",
+    borderRadius: "6px",
+    minWidth: 275,
+  },
+  textStyles: {
+    textAlign: "initial",
+  },
 }));
 
 const MedicalChecks = () => {
   const classes = useStyles();
   return (
     <>
-      <Container maxWidth="md" className={classes.container}>
-        <Typography variant="h5">Controles y citas médicas</Typography>
+      <Container maxWidth="md">
+ 
+        <b className={classes.textStyles}>CONTROLES Y CITAS MÉDICAS</b>
         <Grid container spacing={4} className={classes.cardContainer}>
-            <Card>
-                <CardMedia>
-                    marico el que lo lea
-                </CardMedia>
-                <CardContent>
-                <Typography variant="h5">Render</Typography>
-                </CardContent>
-            </Card>
-
-            <Card>
-                <CardMedia>
-                    marico el que lo lea
-                </CardMedia>
-                <CardContent>
-                <Typography variant="h5">Render</Typography>
-                </CardContent>
-            </Card>
+            <Cards /> 
         </Grid>
       </Container>
     </>
