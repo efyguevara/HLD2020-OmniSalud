@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     header: {
         backgroundColor: "#FFFFFF",
         borderBottom: "3px solid #98C11D",
+        marginBottom: "20px"
     },
     fontNav: {
         color: "#98C11D"
