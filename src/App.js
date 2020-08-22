@@ -4,7 +4,7 @@ import Routes from './routes/routes';
 
 
 const App = () => {
-  console.log("Holi")
+  console.log("Holii")
   return (
     <Routes />
   );
