@@ -6,7 +6,7 @@ import Dashboard from '../views/Dashboard/Dashboard';
 import Login from '../views/login/Login';
 import ClinicalFile from '../views/ClinicalFile/ClinicalFile';
 import MedicalRecord from '../views/medicalRecord/MedicalRecord';
-import Prescriptions from '../views/prescriptions/Prescriptions';
+import PrescriptionsAndExams from '../views/PrescriptionsAndExams/PrescriptionsAndExams';
 import MedicalChecks from '../views/medicalChecks/MedicalChecks';
 import Information from '../views/info/Information';
 import NotFound from '../components/NotFound/NotFound';
@@ -37,7 +37,7 @@ const Routes = () => {
                             <Route exact path="/historial-medico" component={MedicalRecord} />
                             <Route exact path="/ficha-clinica" component={ClinicalFile} />
                             <Route exact path="/controles-y-citas-medicas" component={MedicalChecks} />
-                            <Route exact path="/recetas-y-examenes" component={Prescriptions} />
+                            <Route exact path="/recetas-y-examenes" component={PrescriptionsAndExams} />
                             <Route exact path="/información-de-interes" component={Information} />
                             <Route component={NotFound} />
                         </Switch>

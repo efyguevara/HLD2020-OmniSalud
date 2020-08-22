@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Prescriptions = () => {
+const PrescriptionsAndExams = () => {
   const classes = useStyles();
   return (
     <>
@@ -44,4 +44,4 @@ const Prescriptions = () => {
   );
 };
 
-export default Prescriptions;
+export default PrescriptionsAndExams;
